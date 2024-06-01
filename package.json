@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "build": "npm start",
-    "postinstall": "node install-chromium.js"
+    "postinstall": "node node_modules/puppeteer/install.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
