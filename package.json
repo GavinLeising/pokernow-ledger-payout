@@ -4,11 +4,13 @@
   "description": "Scrape poker ledger and calculate payouts",
   "main": "scraper.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "npm start",
+    "postinstall": "npm install puppeteer"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "puppeteer": "^13.0.0"
+    "puppeteer": "^10.0.0"
   }
 }
