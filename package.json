@@ -1,0 +1,14 @@
+{
+  "name": "poker-ledger-payout",
+  "version": "1.0.0",
+  "description": "Scrape poker ledger and calculate payouts",
+  "main": "scraper.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "puppeteer": "^13.0.0"
+  }
+}
