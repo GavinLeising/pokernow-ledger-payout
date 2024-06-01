@@ -11,8 +11,11 @@ app.use(express.static('.'));
 app.post('/calculate-payouts', async (req, res) => {
   try {
     const url = req.body.url;
+    console.log(url);
     const data = await scrapeLedger(url);
     const payouts = calculatePayouts(data);
+    console.log("PAYOUTS");
+    console.log(payouts);
     res.json({ payouts });
   } catch (error) {
     res.status(500).json({ error: error.message });
